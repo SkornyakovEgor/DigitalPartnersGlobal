@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main_bg{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/cosmos.png);
+    background-size: cover;
+}
+
+h3, p{
+    font-family: "Roboto";
+    color: #fff;
+}
+
+

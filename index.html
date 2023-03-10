@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+    <div class="main_bg">
+        <div class="form_wrapper">
+            <div class="form_bg">   
+                <form id="form" action="/" method="POST">
+                    <di class="form_header">
+                        <h3 class="form_heading">For business enquiries please use the form below</h3>
+                        <p class="help_text">*Required</p>
+                    </di >
+                    <div class="label_wrapper">
+                        <label class="form_label">
+                            <input type="text" required>
+                            <p class="label_name">Name</p>
+                        </label>
+                        <label class="form_label">
+                            <input type="text" required>
+                            <p class="label_name">Company</p>
+                        </label>
+                        <label class="form_label">
+                            <input type="email" required>
+                            <p class="label_name">E-mail</p>
+                        </label>
+                        <label class="form_label">
+                            <input type="tel"  pattern="[0-9]{4}">
+                            <p class="label_name">Phone</p>
+                        </label>
+                        <label class="form_label">
+                            <input type="text">
+                            <p class="label_name">Subject</p>
+                        </label>
+                        <label class="form_label">
+                            <textarea type="textarea" required></textarea>
+                            <p class="label_name">Message</p>
+                        </label>
+                    </div>
+
+                    <div id="checkbox_wrapper">
+                        <input type="checkbox" id="check" name="Privacy" checked>
+                        <label id="checkbox_label" for="check" ><span></span><p class="help_text">I accept <a href="#">Terms and Privacy Policy</a></p></label>
+                    </div>
+                  
+                    <label id="button_label">
+                        <button type="submit">Send</button>
+                    </label>
+                </form>
+            </div>
+        </div>
+    </div>
+<body>
+    <script src="/js/script.js"></script>
+</body>
+</html>

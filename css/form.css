@@ -1,0 +1,144 @@
+.form_wrapper{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_heading{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.form_header .help_text{
+    text-align: center;
+    margin: 10px 0;
+}
+
+.form_bg{
+    background: #171929;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.7);
+    border-radius: 27px;
+    padding: 41px 45px;
+    max-width: 390px;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+}
+
+.label_wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+}
+
+
+.help_text, .label_name{
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 120%;
+    color: #797EA3;
+}
+
+.form_label{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.form_label input, .form_label textarea
+{
+    width: 100%;
+    background-color: #171929;
+    border: none;
+    border-bottom: 1px solid #3F4363;
+    outline: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: #FFFFFF;
+    margin-top: 7px;
+    padding: 5px 0;
+}
+
+.form_label textarea{
+    resize:none;
+
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+#checkbox_label{
+    display: flex;
+    margin-top: 37px;
+    margin-bottom: 36px;
+    gap: 12px;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+#checkbox_label a{
+    color: #797EA3;
+}
+
+
+#button_label{
+    display: flex;
+    justify-content: center;
+}
+
+#button_label button{
+    background: #2C2F47;
+    border-radius: 28px;
+    color: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 11px 40px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+}
+
+.form_label input:focus ~ p,
+.form_label textarea:focus ~ p{
+    color: #fff;
+}
+
+input:required ~ p::after,
+textarea:required ~ p::after{
+    content: "*";
+    color: #797EA3;
+}
+
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox] + label span {
+    background: #2C2F47;
+    border-radius: 8px;
+    display: inline-block;
+    width: 31px;
+    height: 31px;
+    line-height: 0.25em;
+    padding: 10px 8px;
+    text-align: center;
+    vertical-align: middle;
+}
+ input[type=checkbox]:checked + label span::after {
+    content: "";
+    display: inline-block;
+    background: url("../img/check.svg");
+    width: 20px;
+    height: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
