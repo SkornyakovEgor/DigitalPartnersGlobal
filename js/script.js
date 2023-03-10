@@ -40,3 +40,11 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 });
+
+const button = document.querySelector("#checkbox_wrapper");
+const input = document.querySelector("#submit_button");
+
+button.addEventListener("mousedown", () => {
+  input.toggleAttribute("disabled");
+  console.log(123)
+});
