@@ -29,11 +29,11 @@
                             <p class="label_name">Company</p>
                         </label>
                         <label class="form_label">
-                            <input type="email" required>
+                            <input type="email" required puttern="[\w-\.]+@[\w-]+\.[a-z]{2,4}$/i">
                             <p class="label_name">E-mail</p>
                         </label>
                         <label class="form_label">
-                            <input type="tel"  pattern="[0-9]{4}">
+                            <input type="tel" id="phone" data-phone-pattern pattern="[0-9]">
                             <p class="label_name">Phone</p>
                         </label>
                         <label class="form_label">

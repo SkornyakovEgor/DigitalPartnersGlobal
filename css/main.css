@@ -6,7 +6,7 @@
 
 .main_bg{
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     background-image: url(../img/cosmos.png);
     background-size: cover;
 }
