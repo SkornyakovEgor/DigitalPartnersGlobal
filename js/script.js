@@ -46,5 +46,5 @@ const input = document.querySelector("#submit_button");
 
 button.addEventListener("mousedown", () => {
   input.toggleAttribute("disabled");
-  console.log(123)
+  input.classList.toggle("disabled_button")
 });

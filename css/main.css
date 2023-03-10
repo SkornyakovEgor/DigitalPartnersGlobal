@@ -17,7 +17,6 @@ h3, p{
 }
 
 
-
 @media screen and (max-height: 800px){
     .main_bg{
       height: fit-content;
