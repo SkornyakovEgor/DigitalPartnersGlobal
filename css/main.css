@@ -6,7 +6,7 @@
 
 .main_bg{
     width: 100vw;
-    height: 100%;
+    height: 100vh;
     background-image: url(../img/cosmos.png);
     background-size: cover;
 }
@@ -17,3 +17,9 @@ h3, p{
 }
 
 
+
+@media screen and (max-height: 800px){
+    .main_bg{
+      height: fit-content;
+    }
+}
